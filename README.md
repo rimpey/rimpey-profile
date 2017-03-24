@@ -1,0 +1,1 @@
+This project is based on the 'sbm-project-template' as a starting point for project builds.

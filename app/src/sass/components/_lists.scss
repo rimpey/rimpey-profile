@@ -1,0 +1,41 @@
+/* =================================
+   COMPONENTS / LISTS
+   ================================= */
+
+.panel {
+
+    ul {
+        border: remCalc(40) 0;
+        list-style: none;
+
+        li {
+            font-size: remCalc(20);
+            font-family: 'Lato', sans-serif;
+            margin-bottom: remCalc(20);
+            color: #fff;
+
+            // hanging indent
+            padding-left: remCalc(16);
+            text-indent: - remCalc(23);
+
+            &:before {
+                content: '\2022';
+                color: $yellow;
+                padding-right: remCalc(14);
+            }
+        }
+    }
+}
+
+/* Small. Above 34em (544px) */
+// @media screen and (min-width: 34em) {
+
+
+/* Portrait phones and smaller (480px) */
+// @media (max-width: 30em) {
+//     .panel {
+//         p:empty {
+//             display: none;
+//         }
+//     }
+// }

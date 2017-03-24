@@ -1,0 +1,8 @@
+/* =================================
+   UTILS / FUNCTIONS
+   ================================= */
+
+@function remCalc($size) {
+
+    @return ($size / 16)+rem;
+}

@@ -1,0 +1,24 @@
+/* =================================
+   BASE / SOCIAL
+   ================================= */
+
+ #social-media {
+        height: remCalc(82);
+        padding: 1.5rem 0;
+        background: $social-background;
+        text-align: center;
+
+        #social-wrapper {
+            display: inline-block;
+
+            a {
+                color: $social-font;
+                margin: 0 0.8em;
+                transition: color .4s ease-in-out;
+
+                &:hover {
+                    color: $white;
+                }
+            }
+        }
+   }

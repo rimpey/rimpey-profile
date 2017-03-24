@@ -1,0 +1,195 @@
+// /* =================================
+//    LAYOUT / NAV
+//    ================================= */
+
+.branding {
+    text-align: center;
+}
+.navigation {
+    background-color: $dark-background;
+
+    nav ul {
+        display: table;
+        margin: 0 auto;  
+
+        li {
+            display: table-cell; 
+
+            a {
+                padding: 15px;
+                display: block;
+                color: $white;
+                text-decoration: none;  
+
+                &:hover {
+                    background-color: $grey-highlight;
+                } 
+            }  
+        } 
+    }
+}
+
+.bg-grey {
+    background-color: $grey-lightest;
+}
+
+
+
+//    #nav { 
+//     width: 410px;
+//     float: right;
+//     margin-top: 20px;
+
+//     ul {
+//         list-style: none;
+//         display: block;
+//         margin: 0 auto;
+//         list-style: none;
+//     }
+
+//     li {
+//         margin-top: 9px;
+//         float: left;
+//         padding-left: 21px;
+
+//         a { 
+//             color: #fff; 
+//             opacity:0.6; 
+//             font-size: 16px; 
+//             text-decoration: none; 
+//             font-family: 'Wellfleet';
+
+//             &.active {
+//                 color: #fff; 
+//                 opacity:1; 
+//                 border-bottom: 2px solid #fff;
+//             }
+
+//             &:hover {
+//                 color: #fff; 
+//                 opacity:1;
+//             }
+//         }
+//     }
+// }
+
+// .navbar {
+//     padding: 0;
+//     border-bottom: 2px solid $yellow;
+// }
+
+// .navbar-brand {
+//     padding: 0;
+// }
+
+// #logo a { 
+//     color: #fff; 
+//     text-decoration: none; 
+//     float: left; 
+//     font-size: 30px; 
+//     margin-top: 20px; 
+//     color: #fff; 
+//     font-family:"Wellfleet"; 
+//     font-weight: bold;
+// }
+
+// // ** NAV BAR **/
+
+// #topnotch-menu {
+//     // clear left on mobile
+//     // so that hamburger menu will move onto line below logo text otherwise floats next to it
+//     // clear float left from previous item logo text
+//     clear: left;
+//     .navbar-nav {
+//         line-height: 50px;
+//         padding: 25px;
+
+//         .nav-item + .nav-item {
+//             margin-left: 0;
+//         }
+//     }
+// }
+
+// // ** NAV BAR **/
+
+// .navbar-dark {
+
+//     .navbar-brand {
+//         color: $orange;
+//     }
+//     .navbar-brand:hover {
+//         color: $orange;
+//     }
+
+//     .navbar-nav {
+//         .nav-link {
+//             color: #fff;
+//             font-size: 20px;
+//             padding-top: 0;
+//             padding-bottom: 0;
+//             &.active {
+//                 color: $yellow;
+//                 &:hover, &:focus {
+//                     color: $yellow;
+//                 }
+//             }
+//         }
+//         .nav-link:hover {
+//             color: $yellow;
+//         } 
+//     }
+
+// }
+
+// .navbar.bg-inverse {
+//     background: $blue; 
+//     background: linear-gradient($bluetop, $blue);
+// }
+
+
+// // hamburger and border yellow colour
+// .navbar-toggler {
+//     // unicode text
+//     color: $yellow;
+//     border: 2px solid $yellow;
+//     font-size: 30px;
+//     margin: 25px;
+// }
+
+
+// /* Small. Above 34em (544px) */
+// @media screen and (min-width: 34em) {
+
+//     #topnotch-menu  {
+//         // above mobile then menu items will be floated 
+//         clear: none;
+//         .navbar-nav {
+//             line-height: 100px;
+//             padding: 0 2rem 0 0;
+
+//             .nav-item + .nav-item {
+//                 margin-left: 2rem;
+//             }
+//         }
+//     }
+// }
+
+
+// // *** Media Queries **
+
+// /* Small. Above 34em (544px) */
+// // @media screen and (min-width: 34em) {
+// // }
+
+// // /* Medium. Above 48em (768px) */
+// // @media screen and (min-width: 48em) {
+// // }
+
+// /* Large. Above 62em (992px) */
+// // @media screen and (min-width: 62em) {
+// // }
+
+// /* Extra large. Above 75em (1200px) */
+// // @media screen and (min-width: 75em) {
+// // }
+

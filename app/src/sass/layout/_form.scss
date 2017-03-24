@@ -1,0 +1,86 @@
+/* =================================
+   LAYOUT / FORM
+   ================================= */
+
+form {
+    width: 400px;
+    display: table;
+    margin: 0 auto;
+}
+input, textarea {
+    width: 100%;
+    line-height: 30px;
+    padding: 0 15px;
+}
+
+.btn-wrapper {
+    display: table;
+    margin: 0 auto;
+
+    .btn {
+        display: block;
+        padding: 15px 60px;
+        background: $dark-background;
+        color: $white;
+        text-transform: uppercase;
+        text-decoration: none;  
+
+        &:hover {
+            background: $black;
+        } 
+    }
+}
+
+textarea {
+    border: 1px solid $white;
+}
+
+
+/* RI: style contact form7 button */
+// .btn-wrapper .btn {
+//     padding: 5px 60px;
+// }
+
+// #quote {
+//     background: #fff;
+//     color: $brown;
+//     padding-top: remCalc(40);
+//     padding-bottom: remCalc(40);
+
+//     p {
+//         font-size: remCalc(18); 
+//         font-family: 'Lato', sans-serif;
+//         padding-bottom: remCalc(20);
+//     }
+    
+//     textarea {
+//         resize: none; // removes the resize handle bottom right 
+//         overflow: hidden; // no scroll 
+//     }
+// }
+
+// #success_message{
+//     display: none;
+//     font-size: remCalc(18); 
+//     font-family: 'Lato', sans-serif;
+//     padding-bottom: remCalc(20);
+// }
+
+// .form-control {
+//     background: $lightbluebg;  
+// }
+
+// input {
+//     #input-name {
+
+//         .form-control {
+//             background: rgba(222, 218, 206, .8);
+
+//             &:focus {  // trying to deal with User Agent Stylesheet Yellow colour auto fill text
+//                 background: rgba(222, 218, 206, .8); 
+//                 border-color: $darkgrey;
+//                 outline: none;   
+//             }
+//         }
+//     }
+// }
