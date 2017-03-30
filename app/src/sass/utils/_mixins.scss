@@ -1,0 +1,12 @@
+/* =================================
+   UTILS / MIXINS
+   ================================= */
+
+/* top and side navigation for before and after slash */
+@mixin menu-slash($colour) {
+    content: " / ";
+    color: $colour;
+    font-weight: bolder;
+}
+
+

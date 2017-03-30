@@ -2,6 +2,35 @@
    COMPONENTS / SECTIONS
    ================================= */
 
+/***** HERO PANEL ****/
+#panel-hero {
+    background: $highlight-colour;
+    height: 440px;
+    padding: 44px;
+    position: relative;
+
+    #hero-caption {
+        font-size: remCalc(32);
+        line-height: 1.5em;
+        padding-bottom: 55px;
+    }
+
+    #hero-image {
+        width: 60%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+
+
+
+
 .section-space {
 	padding-top: 60px;
     padding-bottom: 60px;
