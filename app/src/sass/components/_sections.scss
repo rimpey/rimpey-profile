@@ -2,24 +2,39 @@
    COMPONENTS / SECTIONS
    ================================= */
 
-/***** HERO PANEL ****/
-#panel-hero {
+section {
+
+    h3 {
+        text-align: left;
+        font-weight: normal;
+        font-size: remCalc(18);
+    }
+}
+
+/***** HERO SECTION ****/
+
+#hero {
     background: $highlight-colour;
-    height: 440px;
-    padding: 44px;
+    height: 510px;
+    padding: 50px;
     position: relative;
 
     #hero-caption {
         font-size: remCalc(32);
         line-height: 1.5em;
-        padding-bottom: 55px;
+        padding-bottom: 50px;
+    }
+
+    #panel-title {
+        font-size: 24px;
+        line-height: 25px;
     }
 
     #hero-image {
         width: 60%;
         position: absolute;
         bottom: 0;
-        right: 0;
+        right: 50px;
 
         img {
             width: 100%;
@@ -27,7 +42,23 @@
     }
 }
 
+/***** MEET ME SECTION ****/
 
+#meetme {
+    background-image: url("/images/layer-meet-me.png");
+
+    #profile-pic {
+
+        #profile-filter {
+
+            // background-image: url("/images/overlay-say-hello.png");
+
+            img {
+                width: 100%;  
+            }
+        }
+    }
+}
 
 
 

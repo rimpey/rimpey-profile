@@ -94,9 +94,7 @@
 
                 &:hover {
                     &:before, &:after {
-                        content: " / ";
-                        color: $text-colour;
-                        font-weight: bolder;
+                        @include menu-slash($text-colour);
                     }
                 } 
             }

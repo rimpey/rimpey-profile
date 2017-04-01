@@ -2,8 +2,9 @@
    UTILS / RESPONSIVE
    ================================= */
 
-// Sidenav Push
+/***** NAVIGATION ****/
 
+// Sidenav Push
 @media screen and (max-height: 450px) {
   .sidenav {
       padding-top: 15px;
@@ -13,6 +14,16 @@
       }
     }
 }
+
+@media screen and (min-width: 992px) {
+    #top-nav {
+        display: inline-block;
+    }
+}
+
+/***** FOOTER ****/
+
+
 
 // // *** Media Queries **
 
@@ -27,11 +38,7 @@
 // /* Large. Above 62em (992px) */
 // // @media screen and (min-width: 62em) {
 // // }
-@media screen and (min-width: 992px) {
-    #top-nav {
-        display: inline-block;
-    }
-}
+
 
 // /* Extra large. Above 75em (1200px) */
 // // @media screen and (min-width: 75em) {

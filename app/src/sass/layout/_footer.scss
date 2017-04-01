@@ -2,106 +2,141 @@
    LAYOUT / FOOTER
    ================================= */
 
-#footer-section {
-    background: $dark-background;
-    padding: 35px 0;
-    color: $grey-highlight;;
-    font-size: 12px;
-    padding: 40px 0 35px;
+   
+footer {
+    background: $highlight-colour;
 
-    .sbm {
-        text-align: right;
-    }
+    section {
 
-    a {
-        text-decoration: underline;
-        padding-right: 95px;
+        #vertical-align-hello-msgbubble {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
 
-        &:hover {
-            text-decoration: none;
-            color: $footer-text-hover;
+            h3 {
+                margin: 0;
+                padding-left: 50px;
+            }
+
+            #msgbubbles {
+                display: inline-block;
+                width: 45px;
+                height: 45px;
+                margin: 20px 50px;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        #wrapper-email-social-media {
+
+            position: relative;
+            background-color: $social-overlay;
+            z-index: 1;
+
+            // creates menu colour angle
+            &:after {
+                content: " ";
+                position: absolute;
+                display: block;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                right: 0;
+                background-color: $social-overlay;
+                z-index: -1;
+                
+                transform-origin: top right;
+                transform: skew(-30deg, 0deg);
+            }
+
+            #email {
+                background-color: $social-overlay;
+                text-align: right;
+                padding-top: 25px;
+                padding-right: 50px;
+
+                a {
+                    font-size: remCalc(22);
+                    letter-spacing: 1.5px;
+                    text-decoration: none;
+                    color: $social-media;
+
+                    &:hover {
+                        cursor: pointer;
+                        color: $nav-text;
+                    }
+                }
+            } 
+
+            #social-media {
+                background-color: $social-overlay;
+                text-align: right;
+                padding-right: 50px;
+
+                a {
+                    color: $social-media;
+                    padding-right: 10px;
+
+                    &:hover {
+                        cursor: pointer;
+                        color: $nav-text;
+                    }
+
+                    &:last-child() {
+                        padding-right: 0;
+                    }
+                }
+            }
         }
     }
 
-    img {
-        position: absolute;
-        right: 0;
-        top: 50%;
-        margin-top: -22px;
+    // Mobile xs size displays footer at the bottom
+
+    #footer-xs-bottom {
+        display: block;
+        width: 100%;
+        background-color: $social-overlay;
+        text-align: center;
+        padding: 25px;
+        margin-top: 25px;
+
+        #email-bottom {
+            background-color: $social-overlay;
+            padding-bottom: 20px;
+            font-size: larger;
+
+            a {
+                font-size: remCalc(22);
+                letter-spacing: 1.5px;
+                text-decoration: none;
+                color: $social-media;
+
+                &:hover {
+                    cursor: pointer;
+                    color: $nav-text;
+                }
+            }
+        } 
+
+        #social-media-bottom {
+            background-color: $social-overlay;
+
+            a {
+                color: $social-media;
+                padding-right: 10px;
+
+                &:hover {
+                    cursor: pointer;
+                    color: $nav-text;
+                }
+
+                &:last-child() {
+                    padding-right: 0;
+                }
+            }
+        }
     }
 }
-
-// footer {
-
-//     background-color: $blue;
-//     overflow: hidden;
-//     padding-bottom: 1rem;
-
-//     h1 {
-//         font-size: remCalc(30); 
-//         font-family: 'Roberto', sans-serif; 
-//         padding-top: remCalc(20); 
-//         text-align: left; 
-//         color: $yellow; 
-//     }
-
-//     ul {
-        
-//         list-style: none;
-//         padding-left: 0;
-//         padding-top: remCalc(18);
-
-//         li {
-//             font-size: remCalc(18); 
-//             font-family: 'Lato', sans-serif;
-//             color: #fff;
-
-//             // here styled as WordPress doesn't allow <br /> between lines in a list
-//             &:nth-child(4) {
-//                 padding-top: remCalc(20);
-//             }
-
-//             a, a:hover, a:focus {
-//                 color: #fff;
-//                 text-decoration: none;
-//             } 
-//         }
-//     }
-
-//     //***  fb icon styling in _social.scss
-
-//    .abn {
-
-//         p {
-//             color: $yellow;
-//             font-size: smaller;
-//             margin-bottom: remCalc(35);
-//         }
-//     }
-// }
-
-// // *** Align 'F' facebook icon with ABN number
-
-// /* Small. Above 34em (544px) */
-// @media screen and (min-width: 34em) {
-
-//     footer {
-
-//         .row.business {
-//             position: relative;
-//         }
-
-//         .abn {
-
-//             position: absolute;
-//             right: 0;
-//             bottom: 0;
-
-//             p {
-//                 color: $yellow;
-//                 font-size: smaller;
-//                 margin-bottom: 0;
-//             }
-//         }
-//     }
-// }
