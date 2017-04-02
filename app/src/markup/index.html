@@ -4,7 +4,6 @@
 <!-- partial:includes/nav.html -->
 <!-- endpartial -->
 
-
         <!-- ***** HERO SECTION **** -->
 
         <section id="hero">
@@ -36,14 +35,43 @@
 
         <section id="meetme">
             <div class="row">
-                <div class="col-sm-6">
+
+                <!-- Full banner rimpey profile at larger screen sizes -->
+                <div id="wrapper-rimpey-banner" class="hidden-xs-down">
                 </div>
-                <div class="col-sm-6" id="profile-pic">
-                    <div id="profile-filter">
-                        <!--<img src="images/photo-rimpey.png" alt="profile picture">-->
+
+                <!-- css linear-gradiant to cover panel -->
+                <div id="meetme-top-filter" class="hidden-xs-down">
+                </div>
+
+                <!-- Square rimpey profile to stack as small size -->
+                <div class="col-sm-6 hidden-sm-up flex-last" id="profile-pic">
+                    <img src="images/photo-rimpey-square.png" alt="profile picture">
+                </div>
+
+                <div class="col-sm-6" id="meetme-blurb">
+                    <h3>MEET ME /</h3>
+                    <p>
+                      Nemore consulatu definitiones, an simul qualisque 
+                      necessitatibus mea, iudico malorum repudiandae nec in. 
+                      Qui ex elit mollis elaboraret. Qui ut omnis tation 
+                      necessitatibus, mollis facilisis an vix.  
+                    </p>
+                    <ul>
+                        <li>/ TRAIT1 /</li>
+                        <li>/ TRAIT2 /</li>
+                        <li>/ TRAIT3 /</li>
+                        <li>/ TRAIT4 /</li>
+                        <li>/ TRAIT5 /</li>
+                        <li>/ TRAIT6 /</li>
+                    </ul>
+                    <div id="meetme-top-down-filter" class="hidden-sm-up">
                     </div>
                 </div>
-            </div>
+
+            </div> <!-- row -->
+
+
         </section> 
 
     <!-- partial:includes/foot.html -->

@@ -45,50 +45,67 @@ section {
 /***** MEET ME SECTION ****/
 
 #meetme {
-    background-image: url("/images/layer-meet-me.png");
+    // background: linear-gradient(left top, $meetme-linear-start, $meetme-linear-end);
+    // background: url("images/photo-rimpey.png");
+    // background-size: cover;
+    position: relative;
 
-    #profile-pic {
+    .row {
 
-        #profile-filter {
+        #wrapper-rimpey-banner {
 
-            // background-image: url("/images/overlay-say-hello.png");
+            background: url("../images/photo-rimpey-banner.png");
+            // background-repeat: no-repeat;
+            // background-size: contain;
+            background-size: cover;
+            z-index: -2;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        // only displayed at small device mobile
+        #profile-pic {
+            display: inline-block;
 
             img {
-                width: 100%;  
+                width: 100%;
+                display: block;
             }
         }
+
+        #meetme-blurb {
+            padding: 50px;
+            z-index: 1;
+            position: relative;
+
+            li {
+                color: $traits-text;
+                line-height: 2em; 
+            }
+        }
+    } //end row
+
+    #meetme-top-filter {
+        background: linear-gradient(left, $meetme-linear-start, transparent);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 70%;
+        height: 100%;
+        z-index: -1;
     }
-}
 
+    #meetme-top-down-filter {
+        background: linear-gradient(top, $meetme-linear-start, $highlight-colour);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
 
-
-.section-space {
-	padding-top: 60px;
-    padding-bottom: 60px;
-}
-.section-space-bottom {
-    padding-bottom: 60px;
-}
-.section-space-top {
-    padding-top: 60px;
-}
-.section-space-sm {
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-.section-space-bottom-sm {
-    padding-bottom: 30px;
-}
-.section-space-top-sm {
-    padding-top: 30px;
-}
-.section-space-double {
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
-.section-space-bottom-double {
-    padding-bottom: 120px;
-}
-.section-space-top-double {
-    padding-top: 120px;
-}
+} // end meetme section
