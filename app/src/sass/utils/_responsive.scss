@@ -2,10 +2,12 @@
    UTILS / RESPONSIVE
    ================================= */
 
+
 /***** NAVIGATION ****/
 
 // Sidenav Push
-@media screen and (max-height: 450px) {
+// @media screen and (max-height: 450px) {
+@media only screen and (max-width : 479px) {
   .sidenav {
       padding-top: 15px;
       
@@ -21,28 +23,104 @@
     }
 }
 
-/***** FOOTER ****/
+
+/***** MY SKILLS/MEET ME - SECTION ****/
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) { 
+
+    #myskills {
+        // background-color: $myskills-colour;
+        // position: relative;
+
+        .row {
+            position: relative;
+
+            #myskills-blurb {
+                padding: 50px 50px 100px 50px;
+
+                li {
+                    color: $traits-text;
+                    line-height: 2em; 
+                }
+            } 
+            // image of iPhone at small mobile 
+            #iPhone {
+                position: absolute;
+                width: 75%;
+                padding-left: 15%;
+                padding-top: 70%;
+                z-index: 3;
+
+                img {
+                    width: 100%;
+                    display: block;
+                }    
+            }
+        }
+    }
+
+    // push text down for iPhone image to overlap background colour
+    // between two sections MY SKILLS and MEET ME
+    #container-meetme {
+
+        #meetme {
+            position: relative;
+
+            .row {
+
+                #meetme-blurb {
+                    padding: 110% 50px 50px 50px;
+                    z-index: 1;
+                }
+
+                #container-profile-pic-small {
+                    background-color: $highlight-colour;
+                }
+
+            } //end row
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+
+    // push text down for iPhone image to overlap background colour
+    // between two sections MY SKILLS and MEET ME
+    #meetme {
+        position: relative;
+
+        .row {
+
+            #meetme-blurb {
+                padding: 100px 50px 50px 65px;
+                z-index: 1;
+
+            }
+        } //end row
+    }
+}
 
 
+// // *** Bootstrap 4 Media Queries **
 
-// // *** Media Queries **
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
 
-// /* Small. Above 34em (544px) */
-// // @media screen and (min-width: 34em) {
-// // }
+// Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) { ... }
 
-// // /* Medium. Above 48em (768px) */
-// // @media screen and (min-width: 48em) {
-// // }
+// Medium devices (tablets, 768px and up)
+// @media (min-width: 768px) { ... }
 
-// /* Large. Above 62em (992px) */
-// // @media screen and (min-width: 62em) {
-// // }
+// Large devices (desktops, 992px and up)
+// @media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) { ... }
 
 
-// /* Extra large. Above 75em (1200px) */
-// // @media screen and (min-width: 75em) {
-// // }
 
 /*
 *

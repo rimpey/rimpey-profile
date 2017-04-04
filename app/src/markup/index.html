@@ -1,78 +1,122 @@
-<!-- partial:includes/head.html -->
-<!-- endpartial -->
+    <!-- partial:includes/head.html -->
+    <!-- endpartial -->
 
-<!-- partial:includes/nav.html -->
-<!-- endpartial -->
+    <!-- partial:includes/nav.html -->
+    <!-- endpartial -->
 
-        <!-- ***** HERO SECTION **** -->
 
-        <section id="hero">
-            <div id="hero-caption">
-                METICULOUS CODING. <br />
-                PROBLEM SOLVING. <br />
-                PIXEL HUNTING. () <br />
-            </div>
-            <h3>I AM RHONDA/</h3>
-            <div id="hero-image">
-                <img src="images/hero-macbook-pro.png" alt="pimp website on macbook pro">
-            </div>
-        </section>
+    <!-- ***** HERO **** -->
 
-        <!-- ***** TEST SECTION **** -->
-
-        <section id="opening-hours">
-            <div class="section-space">
-                <div class="container">
-                    <h1>Opening Hours</h1>
-                    <p>Mon - fri: 10am to 6pm</p>
-                    <p>Sat: 10am to 4pm</p>
-                    <p>Sun: 10am to 2pm</p>
+    <div id="container-hero">
+        <div class="container">
+            <section id="hero">
+                <div id="hero-caption">
+                    METICULOUS CODING. <br />
+                    PROBLEM SOLVING. <br />
+                    PIXEL HUNTING. () <br />
                 </div>
-            </div>
-        </section>
-
-        <!-- ***** MEETME SECTION **** -->
-
-        <section id="meetme">
-            <div class="row">
-
-                <!-- Full banner rimpey profile at larger screen sizes -->
-                <div id="wrapper-rimpey-banner" class="hidden-xs-down">
+                <h3>I AM RHONDA/</h3>
+                <div id="hero-image">
+                    <img src="images/hero-macbook-pro.png" alt="pimp website on macbook pro">
                 </div>
+            </section>
+        </div>
+    </div>
 
-                <!-- css linear-gradiant to cover panel -->
-                <div id="meetme-top-filter" class="hidden-xs-down">
-                </div>
+    <!-- ***** MY SKILLS **** -->
 
-                <!-- Square rimpey profile to stack as small size -->
-                <div class="col-sm-6 hidden-sm-up flex-last" id="profile-pic">
-                    <img src="images/photo-rimpey-square.png" alt="profile picture">
-                </div>
+    <div id="container-skills">
+        <div class="container">
 
-                <div class="col-sm-6" id="meetme-blurb">
-                    <h3>MEET ME /</h3>
-                    <p>
-                      Nemore consulatu definitiones, an simul qualisque 
-                      necessitatibus mea, iudico malorum repudiandae nec in. 
-                      Qui ex elit mollis elaboraret. Qui ut omnis tation 
-                      necessitatibus, mollis facilisis an vix.  
-                    </p>
-                    <ul>
-                        <li>/ TRAIT1 /</li>
-                        <li>/ TRAIT2 /</li>
-                        <li>/ TRAIT3 /</li>
-                        <li>/ TRAIT4 /</li>
-                        <li>/ TRAIT5 /</li>
-                        <li>/ TRAIT6 /</li>
-                    </ul>
-                    <div id="meetme-top-down-filter" class="hidden-sm-up">
+            <section id="myskills">
+                <div class="row">
+                    <div class="col-sm-6 hidden-xs-down">
+                        <!-- display iPhone at large size contained in row col -->
+                        <div id="iPhone">
+                            <img src="images/iPhone6.png" alt="profile picture">
+                        </div>
                     </div>
+                    <div class="col-sm-6" id="myskills-blurb">
+                        <h3>MY SKILLS /</h3>
+                        <p>
+                        Nemore consulatu definitiones, an simul qualisque 
+                        necessitatibus mea, iudico malorum repudiandae nec in. 
+                        Qui ex elit mollis elaboraret. Qui ut omnis tation 
+                        necessitatibus, mollis facilisis an vix.  
+                        </p>
+                        <ul>
+                            <li>/ CSS3 /</li>
+                            <li>/ HTML5 /</li>
+                            <li>/ JAVASCRIPT /</li>
+                            <li>/ JQUERY /</li>
+                            <li>/ GULP/GRUNT /</li>
+                            <li>/ SASS/LESS /</li>
+                            <li>/ BOOTSTRAP /</li>
+                            <li>/ WORDPRESS /</li>
+                        </ul>
+                    </div>
+
+                </div> <!-- end row -->
+
+                <!-- display iPhone at small size between MY SKILLS and MEET ME -->
+                <div class="hidden-sm-up" id="iPhone-xs">
+                        <img src="images/iPhone6.png" alt="profile picture">
                 </div>
 
-            </div> <!-- row -->
+            </section>
+        </div>
+    </div>
+
+    <!-- ***** MEETME **** -->
+
+    <!-- outer container extends colour to page edge -->
+    <div id="container-meetme">
+        <div class="container">
+
+            <section id="meetme">
+                <div class="row">
+
+                    <!-- Full banner rimpey profile at medium to large screen sizes -->
+                    <div id="wrapper-rimpey-banner" class="hidden-sm-down">
+                    </div>
+
+                    <!-- css linear-gradiant to cover panel -->
+                    <div id="meetme-top-filter" class="hidden-sm-down">
+                    </div>
+
+                    <!-- Square rimpey profile to stack at small size -->
+                    <!-- extra container to extend colour to page edge on mobile view -->
+                    <div id="container-profile-pic-small" class="hidden-sm-up flex-last">
+                        <div class="col-sm-6" id="profile-pic">
+                            <img src="images/photo-rimpey-square.png" alt="profile picture">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6" id="meetme-blurb">
+                        <h3>MEET ME /</h3>
+                        <p>
+                            Nemore consulatu definitiones, an simul qualisque 
+                            necessitatibus mea, iudico malorum repudiandae nec in. 
+                            Qui ex elit mollis elaboraret. Qui ut omnis tation 
+                            necessitatibus, mollis facilisis an vix.  
+                        </p>
+                        <ul>
+                            <li>/ Problem Solver /</li>
+                            <li>/ Attention to Detail /</li>
+                            <li>/ Tasks to completion /</li>
+                            <li>/ Team Player /</li>
+                            <li>/ Clear Communicator /</li>
+                        </ul>
+                        <div id="meetme-top-down-filter" class="hidden-sm-up">
+                        </div>
+                    </div>
+
+                </div> <!-- end row -->
 
 
-        </section> 
+            </section> 
+        </div>
+    </div>
 
     <!-- partial:includes/foot.html -->
     <!-- endpartial -->

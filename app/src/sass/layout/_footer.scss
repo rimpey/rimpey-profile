@@ -6,7 +6,9 @@
 footer {
     background: $highlight-colour;
 
-    section {
+    #container-hello-msgbubble-social-media {
+
+        background-color: linear-gradient(left, $highlight-colour, $social-overlay);
 
         #vertical-align-hello-msgbubble {
             display: flex;
@@ -91,52 +93,59 @@ footer {
                 }
             }
         }
-    }
+
+} // container-hello-msgbubble-social-media
+
 
     // Mobile xs size displays footer at the bottom
 
-    #footer-xs-bottom {
-        display: block;
-        width: 100%;
+    #container-footer-xs-bottom {
+        // extend colour to page edge
         background-color: $social-overlay;
-        text-align: center;
-        padding: 25px;
-        margin-top: 25px;
 
-        #email-bottom {
+        #footer-xs-bottom {
+            display: block;
+            width: 100%;
             background-color: $social-overlay;
-            padding-bottom: 20px;
-            font-size: larger;
+            text-align: center;
+            padding: 25px;
+            margin-top: 25px;
 
-            a {
-                font-size: remCalc(22);
-                letter-spacing: 1.5px;
-                text-decoration: none;
-                color: $social-media;
+            #email-bottom {
+                background-color: $social-overlay;
+                padding-bottom: 20px;
+                font-size: larger;
 
-                &:hover {
-                    cursor: pointer;
-                    color: $nav-text;
+                a {
+                    font-size: remCalc(22);
+                    letter-spacing: 1.5px;
+                    text-decoration: none;
+                    color: $social-media;
+
+                    &:hover {
+                        cursor: pointer;
+                        color: $nav-text;
+                    }
+                }
+            } 
+
+            #social-media-bottom {
+                background-color: $social-overlay;
+
+                a {
+                    color: $social-media;
+                    padding-right: 10px;
+
+                    &:hover {
+                        cursor: pointer;
+                        color: $nav-text;
+                    }
+
+                    &:last-child() {
+                        padding-right: 0;
+                    }
                 }
             }
-        } 
-
-        #social-media-bottom {
-            background-color: $social-overlay;
-
-            a {
-                color: $social-media;
-                padding-right: 10px;
-
-                &:hover {
-                    cursor: pointer;
-                    color: $nav-text;
-                }
-
-                &:last-child() {
-                    padding-right: 0;
-                }
-            }
-        }
+        } // #footer-xs-bottom 
     }
 }
