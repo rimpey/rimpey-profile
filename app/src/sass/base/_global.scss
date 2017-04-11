@@ -15,18 +15,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 /* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
 -------------------------------------------------------------- */
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
-	background: transparent;
-	border: 0;
-	margin: 0;
-	padding: 0;
-	vertical-align: baseline;
-}
-html {
-    height: 100%;
-}
 body {
-	// font-family: 'Source Sans Pro', sans-serif;
 	font-family: 'Questrial', sans-serif;
 	line-height: 1;
 	background-color: $white;
@@ -42,29 +31,17 @@ h1, h2, h3, h4, h5, h6, .title-header {
     letter-spacing: .8px;
     margin-bottom: 35px;
 }
+
 ol, ul {
 	list-style: none;
 }
 p {
-	font-size: 16px;
+	font-size: 15px;
 	line-height: 25px;
 	font-weight: 400;
 	margin-bottom: 30px;
 }
-article .content p:last-child {
-    margin-bottom: 0;
-}
-article ul > li {
-    padding-left: 10px;
-    line-height: 10px;
-}
-blockquote {
-	quotes: none;
-}
-blockquote:before, blockquote:after {
-	content: '';
-	content: none;
-}
+
 *, *:before, *:after {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -93,43 +70,9 @@ a, a *, a:before, a:after,
 	display: block;
 	margin: 0 auto;
 }
-.no-padding {
-	padding: 0 !important;
-}
-.no-padding-top {
-    padding-top: 0 !important;
-}
-.no-padding-bottom {
-    padding-bottom: 0 !important;
-}
 
-.menu-trigger {
-    display: none !important;
-}
 .clearfix:after, .container:after, .row:after {
 	content: "";
 	display: table;
 	clear: both;
 }
-// .container {
-//     width: 100%;
-//     padding-right: 15px;
-//     padding-left: 15px;
-//     margin-right: auto;
-//     margin-left: auto;
-// }
-// @media (min-width: 1024px) {
-//     .container {
-//         width: 1024px;
-//     }
-// }
-// .container-fluid {
-//     padding-right: 15px;
-//     padding-left: 15px;
-//     margin-right: auto;
-//     margin-left: auto;
-// }
-// .row {
-//     margin-right: -15px;
-//     margin-left: -15px;
-// }

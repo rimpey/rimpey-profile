@@ -3,35 +3,36 @@
    ================================= */
 
 
-/***** NAVIGATION ****/
-
-// Sidenav Push
-// @media screen and (max-height: 450px) {
-@media only screen and (max-width : 479px) {
-  .sidenav {
-      padding-top: 15px;
-      
-      a {
-          font-size: 18px;
-      }
-    }
-}
-
-@media screen and (min-width: 992px) {
-    #top-nav {
-        display: inline-block;
-    }
+/* SMALLER THAN IPHONE 5 LAND */
+// @media only screen and (max-width : 567px) {
+@media (max-width : 550px) {
+// trying to swap out rimpey logo for small
 }
 
 
-/***** MY SKILLS/MEET ME - SECTION ****/
+@media (max-width : 479px) {
+
+    /** NAV **/
+
+    // Sidenav Push
+    .sidenav {
+        padding-top: 15px;
+        
+        a {
+            font-size: 18px;
+        }
+    }
+}
+
+
 
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 576px) { 
 
+
+    /** MY SKILLS **/
+
     #myskills {
-        // background-color: $myskills-colour;
-        // position: relative;
 
         .row {
             position: relative;
@@ -40,7 +41,7 @@
                 padding: 50px 50px 100px 50px;
 
                 li {
-                    color: $traits-text;
+                    color: $list-item-text;
                     line-height: 2em; 
                 }
             } 
@@ -86,6 +87,15 @@
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
 
+    /** NAV **/
+
+    #top-nav {
+        display: inline-block;
+    }
+
+
+    /** MY SKILLS **/
+
     // push text down for iPhone image to overlap background colour
     // between two sections MY SKILLS and MEET ME
     #meetme {
@@ -122,51 +132,20 @@
 
 
 
-/*
-*
-* CSS FOR RESPONSIVESS
-*
-*/
-@media only screen and (min-width : 1200px){
 
-}
-/* Large Devices, Wide Screens */
-@media only screen and (max-width : 1240px) {
-
-}
-@media only screen and (max-width : 1100px) {
-
-}
-@media only screen and (max-width : 1023px) {
-
-}
-/* IPAD PORTRAIT */
-@media only screen and (max-width : 1023px) and (min-width : 768px) {
-
-}
-
-/* IMALLER THAN IPAD PORTRAIT*/
-@media only screen and (max-width : 767px) {
-
-}
-
-/* IPHONE 5 LAND*/
-@media only screen and (max-width : 568px) {
-
-}
 
 /* SMALLER THAN IPHONE 5 LAND */
-@media only screen and (max-width : 567px) {
+// @media only screen and (max-width : 567px) {
 
-}
+// }
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 479px) {
+// @media only screen and (max-width : 479px) {
 
 
-}
+// }
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px) {
+// @media only screen and (max-width : 320px) {
 
-}
+// }

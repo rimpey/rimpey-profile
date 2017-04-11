@@ -9,4 +9,15 @@
     font-weight: bolder;
 }
 
+@for $i from 1 through 9 {
+    .order-#{$i} {
+        order: $i;
+    }
+    @media (max-width: 767px) { 
+        .order-#{$i} {
+            order: 0;
+        }
+    }
+}
+
 

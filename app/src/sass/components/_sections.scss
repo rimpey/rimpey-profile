@@ -11,78 +11,275 @@ section {
     }
 }
 
+
 /***** HERO ****/
 
 #container-hero {
     background-color: $highlight-colour;
-}
 
-#hero {
-    background: $highlight-colour;
-    height: 510px;
-    // left padding -15px as row in other panels enclosed in a row with margin left/right set to -15px
-    padding: 50px 50px 50px 35px;
-    position: relative;
+    .container {
+        // hide iPhone image behind work panel
+        bottom: -60px;
 
-    #hero-caption {
-        font-size: remCalc(32);
-        line-height: 1.5em;
-        padding-bottom: 50px;
-    }
+        #hero {
+            background: $highlight-colour;
+            height: 510px;
+            // left padding -15px as row in other panels enclosed in a row with margin left/right set to -15px
+            padding: 50px 50px 50px 35px;
+            position: relative;
 
-    #panel-title {
-        font-size: 24px;
-        line-height: 25px;
-    }
+            #hero-caption {
+                font-size: remCalc(32);
+                line-height: 1.5em;
+                padding-bottom: 50px;
+            }
 
-    #hero-image {
-        width: 60%;
-        position: absolute;
-        bottom: 0;
-        right: 50px;
+            #panel-title {
+                font-size: 24px;
+                line-height: 25px;
+            }
 
-        img {
-            width: 100%;
+            #hero-image {
+                width: 60%;
+                position: absolute;
+                bottom: 0;
+                right: 50px;
+
+                img {
+                    width: 100%;
+                }
+            }
         }
     }
 }
+
+
+/***** BLANK ROW ****/
+#container-empty {
+    background-color: $highlight-colour;
+
+    .container {
+        background-color: $white;
+        height: 210px;
+    }
+}
+
+
+/***** MY WORK ****/
+
+// extends colour to page edge
+#container-work {
+    background-color: $white;
+
+    #mywork {
+
+        background-color: $white;
+        padding: 50px 35px 0px 35px;
+        // move the content up into the blank line to achieve yellow background either side
+        position: relative;
+        top: -210px;
+        margin-bottom: -210px;
+
+        // Row containing Logo and Project summary
+        .row {
+            display: flex;
+
+            .col-md-4 {
+
+                .work-logo {
+                    padding-bottom: 70px;
+                    border-bottom: 2px solid rgba(248, 212, 34, 0.2);
+
+                    &:hover, &:focus, &:active {
+                        border-bottom: 2px solid $highlight-colour;
+                    }
+
+                    img {
+                        width: 100%;
+                        display: block;
+                    }    
+                }
+
+                .work-project {
+                    padding-top: 20px;
+
+                    .toggle-read {
+                        text-align: bottom;
+                        padding-bottom: 10px;
+                    }
+
+                .toggle-read {
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+            } // .col-md-4
+        } // row
+    } // #mywork
+
+    .work-details {
+        display: none;
+        padding-bottom: 50px;
+
+        .proj-top-line {
+            border-top: 2px solid rgba(248, 212, 34, 0.2);
+
+            &:hover, &:focus, &:active {
+                border-top: 2px solid $highlight-colour;
+            }
+
+            .close {
+                position: relative;
+                // right: 0;
+                // top: 22px;
+                margin-top: 15px;
+                width: 20px;
+                height: 20px;
+                opacity: 0.3;
+                border: 1px solid red;
+
+                &:hover {
+                    opacity: 1;
+                }
+
+                &:before, &:after {
+                    position: absolute;
+                    // left: 15px;
+                    content: ' ';
+                    height: 33px;
+                    width: 2px;
+                    background-color: #333;
+                }
+
+                &:before {
+                    transform: rotate(45deg);
+                }
+                &:after {
+                    transform: rotate(-45deg);
+                }
+            }
+        } 
+
+        .work-img {
+
+            img {
+                width: 100%;
+                display: block;
+                // padding-bottom: 30px;
+            }
+        }
+
+        .work-summary {
+            li {
+                color: $list-item-text;
+                line-height: 2em; 
+            }
+        }
+    }
+
+    // toggle section based on 'View More' of project
+    .work-project-detail {
+        padding-bottom: 50px;
+        // trying to line up text with below panel not quite there
+        margin-left: -15px;
+
+        //row containing yellow line to divide sections and 'x' to close work-project-detail section
+        .row {
+            .col-md-8 .push-md-4 {
+                border-top: 2px solid rgba(248, 212, 34, 0.2);
+                height: 32px;
+
+                &:hover, &:focus, &:active {
+                    border-bottom: 2px solid $highlight-colour;
+                }
+
+                .close {
+                    position: absolute;
+                    right: 32px;
+                    top: 32px;
+                    width: 32px;
+                    height: 32px;
+                    opacity: 0.3;
+                    border: 1px solid red;
+                    background-color: blue;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+
+                    &:before, &:after {
+                        position: absolute;
+                        left: 15px;
+                        content: ' ';
+                        height: 33px;
+                        width: 2px;
+                        background-color: #333;
+                    }
+
+                    &:before {
+                        transform: rotate(45deg);
+                    }
+                    &:after {
+                        transform: rotate(-45deg);
+                    }
+                }
+            }
+        }
+
+        //row containing image and description of project with listed technologies used
+        .row {
+
+            img {
+                width: 100%;
+                display: block;
+            } 
+
+            li {
+                color: $list-item-text;
+                line-height: 2em; 
+            }
+        }
+    }
+}
+
+
 
 /***** MY SKILLS ****/
 
 // extends colour to page edge
 #container-skills {
     background-color: $myskills-colour;
-}
 
-#myskills {
-    background-color: $myskills-colour;
-    position: relative;
+    #myskills {
+        background-color: $myskills-colour;
+        position: relative;
 
-    .row {
-        
-        #iPhone {
-            position: absolute;
-            width: 75%;
-            padding-left: 15%;
-            padding-top: 50px;
-            z-index: 2;
+        .row {
+            
+            #iPhone {
+                position: absolute;
+                width: 75%;
+                padding-left: 15%;
+                padding-top: 50px;
+                z-index: 2;
 
-            img {
-                width: 100%;
-                display: block;
-            }    
-        }
-
-        #myskills-blurb {
-            padding: 50px 50px 50px 0;
-
-            li {
-                color: $traits-text;
-                line-height: 2em; 
+                img {
+                    width: 100%;
+                    display: block;
+                }    
             }
-        } 
-    }
-    #iPhone-xs {
+
+            #myskills-blurb {
+                padding: 50px 50px 50px 0;
+
+                li {
+                    color: $list-item-text;
+                    line-height: 2em; 
+                }
+            } 
+        }
+        #iPhone-xs {
             position: absolute;
             width: 75%;
             z-index: 2;
@@ -95,6 +292,7 @@ section {
                 display: block;
             }    
         }
+    }
 }
 
 /***** MEET ME ****/
@@ -111,7 +309,7 @@ section {
 */
 
 #container-meetme {
-    background: linear-gradient(left, $meetme-linear-start, $highlight-colour);
+    background: linear-gradient(to right, $meetme-linear-start, $highlight-colour);
 
     #meetme {
         position: relative;
@@ -146,14 +344,14 @@ section {
                 position: relative;
 
                 li {
-                    color: $traits-text;
+                    color: $list-item-text;
                     line-height: 2em; 
                 }
             }
         } //end row
 
         #meetme-top-filter {
-            background: linear-gradient(left, $meetme-linear-start, transparent);
+            background: linear-gradient(to right, $meetme-linear-start, transparent);
             position: absolute;
             top: 0;
             left: 0;
@@ -163,7 +361,7 @@ section {
         }
 
         #meetme-top-down-filter {
-            background: linear-gradient(top, $meetme-linear-start, $highlight-colour);
+            background: linear-gradient(to bottom, $meetme-linear-start, $highlight-colour);
             position: absolute;
             top: 0;
             left: 0;
