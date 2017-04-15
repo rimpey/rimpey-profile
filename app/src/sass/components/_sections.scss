@@ -55,6 +55,8 @@ section {
 
 
 /***** BLANK ROW ****/
+
+// extends highlight colour to edge with project logo's pushed up into empty panel 
 #container-empty {
     background-color: $highlight-colour;
 
@@ -73,6 +75,8 @@ section {
 
     #mywork {
 
+        // Note .order 1-9 is programatically assigned property of order: 1-9 in mixins
+
         background-color: $white;
         padding: 50px 35px 0px 35px;
         // move the content up into the blank line to achieve yellow background either side
@@ -82,166 +86,116 @@ section {
 
         // Row containing Logo and Project summary
         .row {
-            display: flex;
 
-            .col-md-4 {
+            // setting for 'View More' bottom aligned
+            .order-4, .order-5, .order-6 {
+                display: flex;
+            }
 
-                .work-logo {
-                    padding-bottom: 70px;
-                    border-bottom: 2px solid rgba(248, 212, 34, 0.2);
+            // Work Logo
+            .work-logo {
+                padding-bottom: 70px;
+                // highlight colour with opacity
+                border-bottom: 2px solid rgba(248, 212, 34, 0.2);
 
-                    &:hover, &:focus, &:active {
-                        border-bottom: 2px solid $highlight-colour;
+                img {
+                    width: 100%;
+                    display: block;
+                }  
+
+                // on click 'View More' the line become bold 
+                &.highlight-line {
+                    border-bottom: 2px solid $highlight-colour;
+                }  
+            }
+
+            // Work Project
+            .work-project {
+                padding-top: 20px;
+                // setting for 'View More' bottom aligned
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .toggle-read {
+                    padding-bottom: 10px;
+
+                    &:hover {
+                        cursor: pointer;
                     }
+                }
+            }
+
+            // Work Details
+            // toggle section based on 'View More' of project
+            .work-details {
+                display: none;
+                padding-bottom: 50px;
+
+                // when added dynamically needs to be display flex upon clicking 'View More'
+                &.display-flex {
+                    display: flex;
+                }
+
+                .work-img {
 
                     img {
                         width: 100%;
                         display: block;
-                    }    
+                        padding-bottom: 30px;
+                    }
                 }
 
-                .work-project {
-                    padding-top: 20px;
+                .work-summary {
 
-                    .toggle-read {
-                        text-align: bottom;
-                        padding-bottom: 10px;
+                    li {
+                        color: $list-item-text;
+                        line-height: 2em; 
                     }
+                }
 
-                .toggle-read {
+                .proj-divide {
+                    border-top: 2px solid $highlight-colour;
+                    height: 40px;
+
+                    .cross-close {
+                        position: absolute;
+                        display: block;
+                        right: 0;
+                        top: 10px;
+                        width: 20px;
+                        height: 20px;
+                        cursor: pointer;
+                        opacity: 0.3;
+
                         &:hover {
-                            cursor: pointer;
+                            opacity: 1;
+                        }
+
+                        &:before, &:after {
+                            position: absolute;
+                            //left: 15px; // ??
+                            content: ' ';
+                            height: 24px; // height of the line of the cross
+                            width: 2px; // width of the line of the cross
+                            left: 8px;
+                            top: -3px;
+                            background-color: #333;
+                        }
+
+                        &:before {
+                            transform: rotate(45deg);
+                        }
+                        &:after {
+                            transform: rotate(-45deg);
                         }
                     }
                 }
-            } // .col-md-4
+            } // .work-details
+
         } // row
-    } // #mywork
-
-    .work-details {
-        display: none;
-        padding-bottom: 50px;
-
-        .proj-top-line {
-            border-top: 2px solid rgba(248, 212, 34, 0.2);
-
-            &:hover, &:focus, &:active {
-                border-top: 2px solid $highlight-colour;
-            }
-
-            .close {
-                position: relative;
-                // right: 0;
-                // top: 22px;
-                margin-top: 15px;
-                width: 20px;
-                height: 20px;
-                opacity: 0.3;
-                border: 1px solid red;
-
-                &:hover {
-                    opacity: 1;
-                }
-
-                &:before, &:after {
-                    position: absolute;
-                    // left: 15px;
-                    content: ' ';
-                    height: 33px;
-                    width: 2px;
-                    background-color: #333;
-                }
-
-                &:before {
-                    transform: rotate(45deg);
-                }
-                &:after {
-                    transform: rotate(-45deg);
-                }
-            }
-        } 
-
-        .work-img {
-
-            img {
-                width: 100%;
-                display: block;
-                // padding-bottom: 30px;
-            }
-        }
-
-        .work-summary {
-            li {
-                color: $list-item-text;
-                line-height: 2em; 
-            }
-        }
-    }
-
-    // toggle section based on 'View More' of project
-    .work-project-detail {
-        padding-bottom: 50px;
-        // trying to line up text with below panel not quite there
-        margin-left: -15px;
-
-        //row containing yellow line to divide sections and 'x' to close work-project-detail section
-        .row {
-            .col-md-8 .push-md-4 {
-                border-top: 2px solid rgba(248, 212, 34, 0.2);
-                height: 32px;
-
-                &:hover, &:focus, &:active {
-                    border-bottom: 2px solid $highlight-colour;
-                }
-
-                .close {
-                    position: absolute;
-                    right: 32px;
-                    top: 32px;
-                    width: 32px;
-                    height: 32px;
-                    opacity: 0.3;
-                    border: 1px solid red;
-                    background-color: blue;
-
-                    &:hover {
-                        opacity: 1;
-                    }
-
-                    &:before, &:after {
-                        position: absolute;
-                        left: 15px;
-                        content: ' ';
-                        height: 33px;
-                        width: 2px;
-                        background-color: #333;
-                    }
-
-                    &:before {
-                        transform: rotate(45deg);
-                    }
-                    &:after {
-                        transform: rotate(-45deg);
-                    }
-                }
-            }
-        }
-
-        //row containing image and description of project with listed technologies used
-        .row {
-
-            img {
-                width: 100%;
-                display: block;
-            } 
-
-            li {
-                color: $list-item-text;
-                line-height: 2em; 
-            }
-        }
-    }
-}
+    } // #mywork  
+} // #container-work 
 
 
 
@@ -294,6 +248,7 @@ section {
         }
     }
 }
+
 
 /***** MEET ME ****/
 

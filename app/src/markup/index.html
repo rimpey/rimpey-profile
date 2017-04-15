@@ -40,158 +40,178 @@
 
                 <div class="row row-eq-height">
 
-                    <!-- WHFNP -->
-                    <div class="col-md-4 order-1">
-                        <div class="work-logo">
-                            <img src="images/logo-whfnp@0,5x.png" alt="profile picture">
-                        </div>
-                    </div>
-                    <div class="col-md-4 order-4">
-                        <div class="work-project">
-                            <p>
-                                PIMP MY CAUSE <br />
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Vestibulum porttitor fermentum arcu suscipit porta. 
-                            </p>
-                            <label class="toggle-read" data-id="whfnp-work">VIEW MORE /</label>
-                        </div>
-                    </div>
-                    <div class="col-md-12 order-7">
-                        <div class="work-details" id="whfnp-work">
-                            <div class="work-img">
-                                <img src="images/mywork-macbook-pro.png" alt="Pimp Project on Macbook Pro">
-                            </div>
-                            <div class="work-summary">
-                                <p></p>
-                                <p>HOW /</p>
-                                <ul>
-                                    <li>/ Bootstrap /</li>
-                                </ul>
-                                <div class="link">
-                                    VISIT WEBSITE /
-                                </div>
-                            </div>
-                        </div> 
-                    </div>
+                    <!-- *** WHFNP - PIMP MY CAUSE *** -->
 
-                    <!-- Foof Records -->
-                    <div class="col-md-4 order-2">
-                        <div class="work-logo">
-                            <img src="images/logo-foof@0,5x.png" alt="profile picture">
-                        </div>
+                    <!-- work logo -->
+                    <div class="col-md-4 work-logo order-1" id="whfnp-logo">
+                        <img src="images/logo-whfnp@0,5x.png" alt="profile picture">
                     </div>
-                    <div class="col-md-4 order-5">
-                        <div class="work-project">
-                            <p>
-                                FOOF RECORDS <br />
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            </p>
-                            <label class="toggle-read" data-id="foof-work">VIEW MORE /</label>
-                        </div>
+                    <!-- project summary -->
+                    <div class="col-md-4 work-project order-4">
+                        <p>
+                            PIMP MY CAUSE <br />
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Vestibulum porttitor fermentum arcu suscipit porta. 
+                        </p>
+                        <!-- view more -->
+                        <label class="toggle-read" data-work-id="whfnp-work" data-logo-id="whfnp-logo">VIEW MORE /</label>
                     </div>
-                    <div class="col-md-12 order-8">
-                        <div class="work-details" id="foof-work">
-                            <div class="work-img">
-                                <img src="images/mywork-macbook-pro.png" alt="Pimp Project on Macbook Pro">
+                    <!-- project details -->
+                    <div class="col-md-12 work-details order-7" id="whfnp-work">
+                        <div class="row">
+                            <!-- divider - top line and cross in box to close work details -->
+                            <div class="col-md-12 proj-divide">
+                                <a href="#" class="cross-close" data-work-id="whfnp-work" data-logo-id="whfnp-logo"></a>
                             </div>
-                            <div class="work-summary">
-                                <p></p>
-                                <p>HOW /</p>
-                                <ul>
-                                    <li>/ Bootstrap /</li>
-                                </ul>
-                                <div class="link">
-                                    VISIT WEBSITE /
+                            <!-- Pimp image and Project summary -->
+                            <div class="row">
+                                <div class="col-md-6 work-img">
+                                    <img src="images/mywork-macbook-pro.png" alt="Pimp Project on Macbook Pro">
+                                </div>
+                                <div class="col-md-6 work-summary">
+                                    <p>
+                                        Pimp My Cause Project Details. Consectetur adipiscing elit. 
+                                        Vestibulum porttitor fermentum arcu suscipit porta. 
+                                        Nam scelerisque porta dui, in pulvinar augue pellentesque in.
+                                    </p>
+                                    <p>
+                                        Donec placerat, tellus non aliquam tempor, lorem nulla sodales elit, 
+                                        non accumsan quam sem vehicula ex. Donec nec est lorem. 
+                                        Aenean vestibulum, elit quis vulputate dapibus, dolor nunc euismod 
+                                        felis, at feugiat lectus ex a leo. Phasellus purus nunc.
+                                    </p>
+                                    HOW /
+                                    <ul>
+                                        <li>/ Bootstrap /</li>
+                                        <li>/ AngularJS /</li>
+                                        <li>/ jQuery /</li>
+                                        <li>/ Node.js /</li>
+                                        <li>/ CSS /</li>
+                                    </ul>
+                                    <div class="link">
+                                        VISIT WEBSITE /
+                                    </div>
                                 </div>
                             </div>
-                        </div> 
-                    </div>
+                        </div> <!-- row -->
+                    </div> <!-- col-md-12 work-details order-7 -->
 
-                    <!-- Crooked -->
-                    <div class="col-md-4 order-3">
-                        <div class="work-logo">
-                            <img src="images/logo-crooked@0,5x.png" alt="profile picture">
-                        </div>
+                    
+                    <!-- *** FOOF RECORDS *** -->
+
+                    <!-- work logo -->
+                    <div class="col-md-4 work-logo order-2" id="foof-logo">
+                        <img src="images/logo-foof@0,5x.png" alt="profile picture">
                     </div>
-                    <div class="col-md-4 order-6">
-                        <div class="work-project">
-                            <p>
-                                CROOKED <br />
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Vestibulum porttitor fermentum arcu suscipit porta. 
-                                Nam scelerisque porta dui, in pulvinar augue pellentesque in.
-                            </p>
-                            <label class="toggle-read" data-id="crooked-work">VIEW MORE /</label>
-                        </div>
+                    <!-- project summary -->
+                    <div class="col-md-4 work-project order-5">
+                        <p>
+                            FOOF RECORDS <br />
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
+                        </p>
+                        <!-- view more -->
+                        <label class="toggle-read" data-work-id="foof-work" data-logo-id="foof-logo">VIEW MORE /</label>
                     </div>
-                    <div class="col-md-12 order-9">
-                        <div class="work-details" id="crooked-work">
-                            <div class="work-img">
-                                <img src="images/mywork-macbook-pro.png" alt="Pimp Project on Macbook Pro">
+                    <!-- project details -->
+                    <div class="col-md-12 work-details order-8" id="foof-work">
+                        <div class="row">
+                            <!-- divider - top line and cross in box to close work details -->
+                            <div class="col-md-12 proj-divide">
+                                <a href="#" class="cross-close" data-work-id="foof-work" data-logo-id="foof-logo"></a>
                             </div>
-                            <div class="work-summary">
-                                <p></p>
-                                <p>HOW /</p>
-                                <ul>
-                                    <li>/ Bootstrap /</li>
-                                </ul>
-                                <div class="link">
-                                    VISIT WEBSITE /
+                            <!-- Foof image and Project summary -->
+                            <div class="row">
+                                <div class="col-md-6 work-img">
+                                    <img src="images/mywork-macbook-pro.png" alt="Foof Project on Macbook Pro">
+                                </div>
+                                <div class="col-md-6 work-summary">
+                                    <p>
+                                        Foof Record Project Details. Consectetur adipiscing elit. 
+                                        Vestibulum porttitor fermentum arcu suscipit porta. 
+                                        Nam scelerisque porta dui, in pulvinar augue pellentesque in.
+                                    </p>
+                                    <p>
+                                        Donec placerat, tellus non aliquam tempor, lorem nulla sodales elit, 
+                                        non accumsan quam sem vehicula ex. Donec nec est lorem. 
+                                        Aenean vestibulum, elit quis vulputate dapibus, dolor nunc euismod 
+                                        felis, at feugiat lectus ex a leo. Phasellus purus nunc.
+                                    </p>
+                                    HOW /
+                                    <ul>
+                                        <li>/ Bootstrap /</li>
+                                        <li>/ AngularJS /</li>
+                                        <li>/ jQuery /</li>
+                                        <li>/ Node.js /</li>
+                                        <li>/ CSS /</li>
+                                    </ul>
+                                    <div class="link">
+                                        VISIT WEBSITE /
+                                    </div>
                                 </div>
                             </div>
-                        </div> 
+                        </div> <!-- row -->
+                    </div> <!-- col-md-12 work-details order-8 -->
+
+
+                    <!-- *** CROOKED *** -->
+
+                    <!-- work logo -->
+                    <div class="col-md-4 work-logo order-3" id="crooked-logo">
+                        <img src="images/logo-crooked@0,5x.png" alt="profile picture">
                     </div>
+                    <!-- project summary -->
+                    <div class="col-md-4 work-project order-6">
+                        <p>
+                            CROOKED <br />
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Vestibulum porttitor fermentum arcu suscipit porta. 
+                            Nam scelerisque porta dui, in pulvinar augue pellentesque in. 
+                        </p>
+                        <!-- view more -->
+                        <label class="toggle-read" data-work-id="crooked-work" data-logo-id="crooked-logo">VIEW MORE /</label>
+                    </div>
+                    <!-- project details -->
+                    <div class="col-md-12 work-details order-9" id="crooked-work">
+                        <div class="row">
+                            <!-- divider - top line and cross in box to close work details -->
+                            <div class="col-md-12 proj-divide">
+                                <a href="#" class="cross-close" data-work-id="crooked-work" data-logo-id="crooked-logo"></a>
+                            </div>
+                            <!-- Crooked image and Project summary -->
+                            <div class="row">
+                                <div class="col-md-6 work-img">
+                                    <img src="images/mywork-macbook-pro.png" alt="Crooked Project on Macbook Pro">
+                                </div>
+                                <div class="col-md-6 work-summary">
+                                    <p>
+                                        Crooked Project Details. Consectetur adipiscing elit. 
+                                        Vestibulum porttitor fermentum arcu suscipit porta. 
+                                        Nam scelerisque porta dui, in pulvinar augue pellentesque in.
+                                    </p>
+                                    <p>
+                                        Donec placerat, tellus non aliquam tempor, lorem nulla sodales elit, 
+                                        non accumsan quam sem vehicula ex. Donec nec est lorem. 
+                                        Aenean vestibulum, elit quis vulputate dapibus, dolor nunc euismod 
+                                        felis, at feugiat lectus ex a leo. Phasellus purus nunc.
+                                    </p>
+                                    HOW /
+                                    <ul>
+                                        <li>/ Bootstrap /</li>
+                                        <li>/ AngularJS /</li>
+                                        <li>/ jQuery /</li>
+                                        <li>/ Node.js /</li>
+                                        <li>/ CSS /</li>
+                                    </ul>
+                                    <div class="link">
+                                        VISIT WEBSITE /
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- row -->
+                    </div> <!-- col-md-12 work-details order-9 -->
+
                 </div> <!-- end row row-eq-height -->
             </section>
-
-
-            <!-- ***** WORK SUMMARY **** --
-            <section id="whfnp-work">
-
-                <!-- Cross in box to close work details --
-                <div class="row">
-                    <div class="col-md-8 push-md-4 proj-top-line">
-                        <a href="#" class="close"></a>
-                    </div>
-                </div>
-
-                <!-- WHFNP --
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="work-img">
-                            <img src="images/mywork-macbook-pro.png" alt="Pimp Project on Macbook Pro">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="work-summary">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Vestibulum porttitor fermentum arcu suscipit porta. 
-                                Nam scelerisque porta dui, in pulvinar augue pellentesque in.
-                            </p>
-                            <p>
-                                Donec placerat, tellus non aliquam tempor, lorem nulla sodales elit, 
-                                non accumsan quam sem vehicula ex. Donec nec est lorem. 
-                                Aenean vestibulum, elit quis vulputate dapibus, dolor nunc euismod 
-                                felis, at feugiat lectus ex a leo. Phasellus purus nunc.
-                            </p>
-
-                            <p>HOW /</p>
-                            <ul>
-                                <li>/ Bootstrap /</li>
-                                <li>/ AngularJS /</li>
-                                <li>/ jQuery /</li>
-                                <li>/ Node.js /</li>
-                                <li>/ CSS /</li>
-                            </ul>
-                            <div class="link">
-                                VISIT WEBSITE /
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            -->
 
         </div> <!-- container -->
     </div> <!-- container-work -->

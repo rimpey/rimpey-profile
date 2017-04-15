@@ -2,6 +2,8 @@
    UTILS / MIXINS
    ================================= */
 
+// ***** MENU ***** //
+
 /* top and side navigation for before and after slash */
 @mixin menu-slash($colour) {
     content: " / ";
@@ -9,6 +11,9 @@
     font-weight: bolder;
 }
 
+// ***** PROJECT DETAILS ***** //
+
+/* loops through .order classes 1-9 and assigns same number for property order */
 @for $i from 1 through 9 {
     .order-#{$i} {
         order: $i;

@@ -27,38 +27,52 @@ $(document).ready(function() {
     // Get the y-coordinate of the bottom of the phone input
     var emailInput = $('#input-email');
     var bottomOfEmail = emailInput.position().top + emailInput.height();
-    // Set the textare height to bottom of phone input - top of textarea
+    // Set the textarea height to bottom of phone input - top of textarea
     var messageInput = $('#input-message');
     messageInput.height(bottomOfEmail - messageInput.position().top);
 
 
-    // *** PROJECT - READ MORE TOGGLE ***//
-    // $("#whfnp-click").click(function(){
-    //     $("#whfnp-work").toggle();
-    //     // swap label
-    //     label = $(this);
-    //     if (label.html() == "VIEW MORE /") {
-    //         label.html("CLOSE /");
-    //     }else{
-    //         label.html("VIEW MORE /");
-    //     }
-    // });
 
-    $(".toggle-read").click(function(){
-        $('.work-details').hide();
+    // *** PROJECT - READ MORE TOGGLE and CLICK ON CROSS CLOSE ***//
+
+    $(".toggle-read, .cross-close").on('click', function(e){
+
+        e.preventDefault();
+
+        // make all toggle-read's the same to eliminate previously opened label
         $(".toggle-read").html("VIEW MORE /");
+        
+        // Display the work details for the work project clicked as a flex
+        // var toggleDiv = $(this).data('workId'); // references 'data-work-id' in main.js
+        var workDiv = $('#' + $(this).attr('data-work-id')); // same as above references 'data-work-id' in main.js
+        // alternative to traversing DOM
+        // $(this).parent().parent().prev().find('.work-logo').css('border-bottom', '2px solid green');
+        // example of referencing another data attribute
+        var logoDiv = $('#' + $(this).attr('data-logo-id'));
+        // display the divide row with border and cross to close
+        // var divideDiv = $('#' + $(this).attr('data-divide-id'));
+        
+        if (workDiv.is(':visible')) {
+            // close it
+            logoDiv.removeClass('highlight-line');
+            workDiv.removeClass('display-flex');  //.hide(); if not using removeClass()
+            // divideDiv.removeClass('proj-divide');
+            // $(".toggle-read").html("VIEW MORE /"); // all toggle-read classes
+            // $(this).html("VIEW MORE /"); // toggle-read class clicked
+        } else {
+            // open it
+            // Cross Close will never run through this code so safe to change text of $(this) object as can only be from toggle-read
+            logoDiv.addClass('highlight-line'); 
+            workDiv.addClass('display-flex'); // if use .show(); replaces display:flex with display: block
+            // workDiv.show().css('display', 'flex'); // add/remove class for flex none
+            // divideDiv.addClass('proj-divide');
 
-        var toggleDiv = $(this).data('id');
-        $("#" + toggleDiv).show();
-        // swap label
-        $(this).html("CLOSE /");
-
-        // label = $(this);
-        // if (label.html() == "VIEW MORE /") {
-        //     label.html("CLOSE /");
-        // }else{
-        //     label.html("VIEW MORE /");
-        // }
+            // default for the close cross is left aligned change to right when first project whfnp
+            // if (divideDiv.attr("id") == "whfnp-divide") {
+            //     $(".cross-close").addClass('cross-right');
+            // }
+            // swap label for current clicked
+            $(this).html("CLOSE /");
+        }
     });
-
 });
