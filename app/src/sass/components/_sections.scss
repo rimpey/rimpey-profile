@@ -97,11 +97,32 @@ section {
                 padding-bottom: 70px;
                 // highlight colour with opacity
                 border-bottom: 2px solid rgba(248, 212, 34, 0.2);
+                position: relative;
 
                 img {
                     width: 100%;
                     display: block;
                 }  
+
+                // place the active and inactive logo's on top of each other
+                .logo-active {
+                    // position: absolute;
+                    // top: 0;
+                    // left: 0;
+                    // z-index: 0;
+
+                    // &.active-to-top {
+                    //     z-index: 2;
+                    // }
+                    display: none;
+                }
+
+                // .logo-inactive {
+                //     position: absolute;
+                //     top: 0;
+                //     left: 0;
+                //     z-index: 1;
+                // }
 
                 // on click 'View More' the line become bold 
                 &.highlight-line {
@@ -116,6 +137,11 @@ section {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                color: $nav-text;
+
+                &.active-text {
+                    color: $text-colour;
+                }
 
                 .toggle-read {
                     padding-bottom: 10px;
