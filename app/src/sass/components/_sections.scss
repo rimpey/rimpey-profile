@@ -144,7 +144,7 @@ section {
                 }
 
                 .toggle-read {
-                    padding-bottom: 10px;
+                    padding-bottom: 30px;
 
                     &:hover {
                         cursor: pointer;
@@ -177,6 +177,16 @@ section {
                     li {
                         color: $list-item-text;
                         line-height: 2em; 
+                    }
+
+                    .link {
+                        a {
+                            text-decoration: none;
+
+                            &:visited, &:hover, &:active {
+                                color: $text-colour;
+                            }
+                        }
                     }
                 }
 
@@ -290,7 +300,8 @@ section {
 */
 
 #container-meetme {
-    background: linear-gradient(to right, $meetme-linear-start, $highlight-colour);
+    // background: linear-gradient(to right, $meetme-linear-start, $highlight-colour);
+    background: linear-gradient(to right, $meetme-linear-start 50%, $highlight-colour 50%);
 
     #meetme {
         position: relative;
@@ -324,6 +335,10 @@ section {
                 z-index: 2;
                 position: relative;
 
+                // h3 {
+                //     padding-top: 50px;
+                // }
+
                 li {
                     color: $list-item-text;
                     line-height: 2em; 
@@ -332,7 +347,7 @@ section {
         } //end row
 
         #meetme-top-filter {
-            background: linear-gradient(to right, $meetme-linear-start, transparent);
+            background: linear-gradient(to right, $meetme-linear-start 30%, transparent);
             position: absolute;
             top: 0;
             left: 0;

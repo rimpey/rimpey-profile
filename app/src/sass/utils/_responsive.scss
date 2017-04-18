@@ -2,14 +2,6 @@
    UTILS / RESPONSIVE
    ================================= */
 
-
-/* SMALLER THAN IPHONE 5 LAND */
-// @media only screen and (max-width : 567px) {
-@media (max-width : 550px) {
-// trying to swap out rimpey logo for small
-}
-
-
 @media (max-width : 479px) {
 
     /** NAV **/
@@ -26,37 +18,38 @@
 
 
 
-// Small devices (landscape phones, 576px and up)
+// Small devices (landscape phones, up to 576px)
 @media (max-width: 576px) { 
 
 
     /** MY SKILLS **/
+    #container-skills {
+        #myskills {
 
-    #myskills {
+            .row {
+                position: relative;
 
-        .row {
-            position: relative;
+                #myskills-blurb {
+                    padding: 50px 50px 100px 50px;
 
-            #myskills-blurb {
-                padding: 50px 50px 100px 50px;
+                    li {
+                        color: $list-item-text;
+                        line-height: 2em; 
+                    }
+                } 
+                // image of iPhone at small mobile 
+                #iPhone {
+                    position: absolute;
+                    width: 75%;
+                    padding-left: 15%;
+                    padding-top: 70%;
+                    z-index: 3;
 
-                li {
-                    color: $list-item-text;
-                    line-height: 2em; 
+                    img {
+                        width: 100%;
+                        display: block;
+                    }    
                 }
-            } 
-            // image of iPhone at small mobile 
-            #iPhone {
-                position: absolute;
-                width: 75%;
-                padding-left: 15%;
-                padding-top: 70%;
-                z-index: 3;
-
-                img {
-                    width: 100%;
-                    display: block;
-                }    
             }
         }
     }
@@ -73,6 +66,10 @@
                 #meetme-blurb {
                     padding: 110% 50px 50px 50px;
                     z-index: 1;
+
+                    // h3 {
+                    //     padding-top: 0;
+                    // }
                 }
 
                 #container-profile-pic-small {
@@ -83,6 +80,30 @@
         }
     }
 }
+
+// Medium devices (tablets, 768px and up)
+// @media (min-width: 550px) and (max-width: 768px) { 
+
+    // push text down for iPhone image to overlap background colour
+    // between two sections MY SKILLS and MEET ME
+//     #container-meetme {
+
+//         #meetme {
+
+//             .row {
+
+//                 #meetme-blurb {
+
+//                     h3 {
+//                         padding-top: 0;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
@@ -107,8 +128,34 @@
                 padding: 100px 50px 50px 65px;
                 z-index: 1;
 
+                // h3 {
+                //     padding-top: 0;
+                // }
+
             }
         } //end row
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+    // push text down for iPhone image to overlap background colour
+    // between two sections MY SKILLS and MEET ME
+    #container-meetme {
+
+        #meetme {
+
+            .row {
+
+                #meetme-blurb {
+
+                    h3 {
+                        padding-top: 50px;
+                    }
+                }
+            }
+        }
     }
 }
 
