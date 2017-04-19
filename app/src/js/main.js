@@ -13,7 +13,17 @@ function closeNav() {
 }
 
 $(document).ready(function() {
+    $('#mySideNav a, #top-nav a').on('click', function(e){
+        e.preventDefault();
 
+        var slide = $(this.hash); // e.g. $('#slide1')
+		if (slide.length) {	// a slide exists with this id
+			var offsetTop = slide.offset().top; // get position of top of slide
+           	// animate to top of slide over 1000 milliseconds
+  			$('html, body').animate({scrollTop: offsetTop}, 1000);
+        }
+    });
+    
 
     // *** SIDE NAVIGATION ***//
 
