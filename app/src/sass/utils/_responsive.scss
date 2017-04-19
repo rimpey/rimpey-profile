@@ -122,6 +122,23 @@
 
 @media (max-width: 992px){
 
+
+    #container-hero {
+        .container {
+
+            #hero {
+                #hero-image {
+
+                    img {
+                        width: 100%;
+                        top: 0;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+
     #container-meetme {
         
         #meetme {
