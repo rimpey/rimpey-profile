@@ -104,14 +104,23 @@ gulp.task('fonts:dist', function () {
       .pipe(gulp.dest('dist/fonts'));
 });
 
+// copy favicon.ico files to dist
+gulp.task('favicons', function () {
+   return gulp
+      .src(['src/*.*','!src/*.html'])
+      .pipe(gulp.dest('dist'));
+});
+
 
 // ** RUN TASKS
 
 // array of tasks being performed when gulp task run from cmdline
-gulp.task('default', runSequence('sass', 'markup', ['fonts:src', 'browserSync', 'watch']));
+gulp.task('default', function () {
+    runSequence('sass', 'markup', ['fonts:src', 'browserSync', 'watch']);
+});
 
 // deployment tasks run in specified order, one at a time
 // tasks contained in square brackets can run at the same time
 gulp.task('dist', function () {
-   runSequence('clean:dist', 'sass', 'markup', ['useref', 'images', 'fonts:dist']);
+   runSequence('clean:dist', 'sass', 'markup', ['useref', 'images', 'fonts:dist', 'favicons']);
 });
