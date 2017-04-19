@@ -55,6 +55,9 @@
                     width: 100%;
                 }
             }
+            .align-right {
+                text-align: right;
+            }
 
             #wrapper-email-social-media {
 
@@ -180,17 +183,18 @@
 
  #container-social-media-bottom {
 
-        #container-bottom {
-            // extend colour to page edge
-            background-color: $social-overlay;
+        // extend colour to page edge
+        background-color: $social-overlay;
 
+        #container-bottom {
+            
             #social-bottom {
                 display: block;
                 width: 100%;
                 background-color: $social-overlay;
                 text-align: center;
                 padding: 25px;
-                margin-top: 25px;
+                // margin-top: 25px;
 
                 #email-bottom {
                     background-color: $social-overlay;

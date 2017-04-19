@@ -9,7 +9,8 @@
 
 // extends colour to page edge
 #container-nav {
-    background-color: $highlight-colour;
+    // background-color: $highlight-colour;
+    background: linear-gradient(to right, $white 50%, $highlight-colour 50%);
 
     .navbar {
 
@@ -20,9 +21,10 @@
 
             display: flex;
             align-items: center;
+            justify-content: space-around;
             position: relative;
             width: 80%;
-            padding: 50px 0 50px 50px;
+            padding: 50px 0;
             font-size: remCalc(20);
             background: $white;
             z-index: 1;
@@ -48,7 +50,7 @@
                 text-decoration: none;
                 padding-left: 10px;
                 padding-right: 0;
-                font-size: medium;
+                font-size: remCalc(16);
 
                 &:before, &:after {
                     @include menu-slash($white);
