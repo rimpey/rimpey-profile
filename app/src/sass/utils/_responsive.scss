@@ -134,22 +134,27 @@
         }
     }
 
-    //move social media bubbles to right once social icons switch to bottom: 
-    footer {
 
-        #container-hello-msgbubble-social-media {
+    #container-footer {
+        //move social media bubbles to right once social icons switch to bottom: 
+        footer {
 
-            #msgbubbles {
-                // display: inline-block;
-                // width: 45px;
-                // height: 45px;
-                // margin: 20px 50px;
-                margin-right: 0;
-                // right: 20px;
+            #container-hello-msgbubble-social-media {
+
+                background: none;
+
+                // #msgbubbles {
+                    // display: inline-block;
+                    // width: 45px;
+                    // height: 45px;
+                    // margin: 20px 50px;
+                    // margin-right: 0;
+                    // right: 20px;
 
 
-                // img {
-                //     width: 100%;
+                    // img {
+                    //     width: 100%;
+                    // }
                 // }
             }
         }

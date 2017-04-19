@@ -10,7 +10,7 @@
 
         #container-hello-msgbubble-social-media {
 
-            background-color: linear-gradient(left, $highlight-colour, $social-overlay);
+            background: linear-gradient(to right, $highlight-colour 70%, $social-overlay 30%);
 
             #vertical-align-hello-msgbubble {
                 display: flex;

@@ -20,7 +20,7 @@
 // Example util styles:
 // _functions, _mixins, _responsive
 @import "utils/mixins";
-@import "utils/responsive";
+
 
 // Example layout styles:
 // _footer, _forms, _header, _nav
@@ -30,4 +30,7 @@
 
 // Example page styles:
 // _home, _contact, _login, _registration
+
+// put last last
+@import "utils/responsive";
 
