@@ -194,26 +194,26 @@
 }
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
+// @media (min-width: 1200px) {
 
-    // push text down for iPhone image to overlap background colour
-    // between two sections MY SKILLS and MEET ME
-    #container-meetme {
+//     // push text down for iPhone image to overlap background colour
+//     // between two sections MY SKILLS and MEET ME
+//     #container-meetme {
 
-        #meetme {
+//         #meetme {
 
-            .row {
+//             .row {
 
-                #meetme-blurb {
+//                 #meetme-blurb {
 
-                    h3 {
-                        padding-top: 50px;
-                    }
-                }
-            }
-        }
-    }
-}
+//                     h3 {
+//                         padding-top: 50px;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
 
 
 // // *** Bootstrap 4 Media Queries **
