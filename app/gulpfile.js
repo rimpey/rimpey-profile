@@ -111,6 +111,14 @@ gulp.task('favicons', function () {
       .pipe(gulp.dest('dist'));
 });
 
+// GitHub Pages
+gulp.task('ghpages', function() {
+ return gulp.src('dist/**/*')
+   .pipe(plugins.ghPages({
+       remoteUrl: 'https://github.com/rimpey/rimpey-profile.git'
+   }));
+}); 
+
 
 // ** RUN TASKS
 

@@ -21,7 +21,6 @@
 // Small devices (landscape phones, up to 576px)
 @media (max-width: 576px) { 
 
-
     /** MY SKILLS **/
     #container-skills {
         #myskills {
@@ -66,10 +65,6 @@
                 #meetme-blurb {
                     padding: 110% 50px 50px 50px;
                     z-index: 1;
-
-                    // h3 {
-                    //     padding-top: 0;
-                    // }
                 }
 
                 #container-profile-pic-small {
@@ -81,11 +76,11 @@
     }
 }
 
+
 // Medium devices (tablets, 768px and up)
 @media (max-width: 768px) { 
 
     #container-meetme {
-        // background: linear-gradient(to right, $meetme-linear-start, $highlight-colour);
         background: linear-gradient(to right, $meetme-linear-start 30%, $highlight-colour);
 
         #meetme {
@@ -96,32 +91,11 @@
                 }
             }
         }
-    }
-
-    
+    }   
 }
 
-    // push text down for iPhone image to overlap background colour
-    // between two sections MY SKILLS and MEET ME
-//     #container-meetme {
-
-//         #meetme {
-
-//             .row {
-
-//                 #meetme-blurb {
-
-//                     h3 {
-//                         padding-top: 0;
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
 
 @media (max-width: 992px){
-
 
     #container-hero {
         .container {
@@ -151,32 +125,17 @@
         }
     }
 
-
     #container-footer {
         //move social media bubbles to right once social icons switch to bottom: 
         footer {
 
             #container-hello-msgbubble-social-media {
-
                 background: none;
-
-                // #msgbubbles {
-                    // display: inline-block;
-                    // width: 45px;
-                    // height: 45px;
-                    // margin: 20px 50px;
-                    // margin-right: 0;
-                    // right: 20px;
-
-
-                    // img {
-                    //     width: 100%;
-                    // }
-                // }
             }
         }
     }
 }
+
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
@@ -186,7 +145,6 @@
     #top-nav {
         display: inline-block;
     }
-
 
     /** MY SKILLS **/
 
@@ -200,37 +158,10 @@
             #meetme-blurb {
                 padding: 100px 50px 50px 65px;
                 z-index: 1;
-
-                // h3 {
-                //     padding-top: 0;
-                // }
-
             }
         } //end row
     }
 }
-
-// Extra large devices (large desktops, 1200px and up)
-// @media (min-width: 1200px) {
-
-//     // push text down for iPhone image to overlap background colour
-//     // between two sections MY SKILLS and MEET ME
-//     #container-meetme {
-
-//         #meetme {
-
-//             .row {
-
-//                 #meetme-blurb {
-
-//                     h3 {
-//                         padding-top: 50px;
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
 
 
 // // *** Bootstrap 4 Media Queries **

@@ -11,7 +11,6 @@ section {
     }
 }
 
-
 /***** HERO ****/
 
 #container-hero {
@@ -24,7 +23,7 @@ section {
         #hero {
             background: $highlight-colour;
             // height: 510px;
-            // left padding -15px as row in other panels enclosed in a row with margin left/right set to -15px
+            // left padding 50px-15px as row in other panels enclosed in a row with margin left/right set to -15px
             padding: 50px 50px 50px 35px;
             position: relative;
 
@@ -41,9 +40,6 @@ section {
 
             #hero-image {
                 width: 100%;
-                // position: absolute;
-                // bottom: 0;
-                // right: 50px;
                 text-align: right;
                 margin-bottom: -5%;
 
@@ -109,25 +105,9 @@ section {
                     display: block;
                 }  
 
-                // place the active and inactive logo's on top of each other
                 .logo-active {
-                    // position: absolute;
-                    // top: 0;
-                    // left: 0;
-                    // z-index: 0;
-
-                    // &.active-to-top {
-                    //     z-index: 2;
-                    // }
                     display: none;
                 }
-
-                // .logo-inactive {
-                //     position: absolute;
-                //     top: 0;
-                //     left: 0;
-                //     z-index: 1;
-                // }
 
                 // on click 'View More' the line become bold 
                 &.highlight-line {
@@ -169,7 +149,6 @@ section {
                 }
 
                 .work-img {
-
                     img {
                         width: 100%;
                         display: block;
@@ -178,7 +157,6 @@ section {
                 }
 
                 .work-summary {
-
                     li {
                         color: $list-item-text;
                         line-height: 2em; 
@@ -215,7 +193,6 @@ section {
 
                         &:before, &:after {
                             position: absolute;
-                            //left: 15px; // ??
                             content: ' ';
                             height: 24px; // height of the line of the cross
                             width: 2px; // width of the line of the cross
@@ -266,7 +243,7 @@ section {
             }
 
             #myskills-blurb {
-                padding: 50px 50px 50px 0;
+                padding: 50px 50px 50px 15px;
 
                 li {
                     color: $list-item-text;
@@ -305,7 +282,6 @@ section {
 */
 
 #container-meetme {
-    // background: linear-gradient(to right, $meetme-linear-start, $highlight-colour);
     background: linear-gradient(to right, $meetme-linear-start 50%, $highlight-colour 50%);
 
     #meetme {
@@ -339,10 +315,6 @@ section {
                 padding: 50px 50px 50px 50px;
                 z-index: 2;
                 position: relative;
-
-                // h3 {
-                //     padding-top: 50px;
-                // }
 
                 li {
                     color: $list-item-text;
